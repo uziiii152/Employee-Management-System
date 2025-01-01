@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose";
+import { Department } from "./Department.modes";
 
 const EmployeeSchema = new Schema(
   {
@@ -11,8 +12,8 @@ const EmployeeSchema = new Schema(
       required: true,
     },
     employeeId: {
-        type: String,
-        required: true,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: Department
     },
     phone: {
         type: String,
