@@ -1,6 +1,6 @@
 
 import express from 'express';
-import { healthCheck } from './controller/healthcheck.controller.js'; // Import your controller
+import { healthCheck } from '../controller/healthcheck.controller.js'; // Import your controller
 
 const router = express.Router(); // Initialize the router correctly
 
